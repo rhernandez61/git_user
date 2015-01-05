@@ -1,0 +1,17 @@
+
+
+   <div class="container">
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="<%= @user.url %>" alt="...">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading"><%= @user.caption %></h4>
+    <p> <%= @user.bio %> </p>
+  </div>
+   <div class="link">
+      <a href= "/user/<%= @user.id %>/edit">edit</a>
+     <a href="/user/<%= @user.id %>/destroy">delete</a>
+  </div>
+  </div>
+</div>
